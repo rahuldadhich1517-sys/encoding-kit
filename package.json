@@ -1,5 +1,5 @@
 {
-  "name": "@rahuldadhich1517-sys/encoding-kit",
+  "name": "@rahul_dadhich15/encoding-kit",
   "version": "0.1.0",
   "description": "Production-ready, zero-runtime-dependency encoding and decoding toolkit for browser and TypeScript applications.",
   "type": "module",
