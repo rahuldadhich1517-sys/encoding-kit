@@ -1,6 +1,6 @@
 # @rahul_dadhich15/encoding-kit
 
-[![CI](https://github.com/rahul-dadhich15/encoding-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/rahul-dadhich15/encoding-kit/actions/workflows/ci.yml)
+[![CI](https://github.com/rahul-dadhich15/encoding-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/rahul-dadhich15-sys/encoding-kit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)]()
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue.svg)]()
