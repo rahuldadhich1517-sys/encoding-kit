@@ -1,0 +1,119 @@
+{
+  "name": "@rahuldadhich1517-sys/encoding-kit",
+  "version": "0.1.0",
+  "description": "Production-ready, zero-runtime-dependency encoding and decoding toolkit for browser and TypeScript applications.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Rahul Dadhich",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahuldadhich1517-sys/encoding-kit.git"
+  },
+  "keywords": [
+    "encoding",
+    "decoding",
+    "ascii85",
+    "base32",
+    "base58",
+    "base62",
+    "base64",
+    "html-entities",
+    "punycode",
+    "idna",
+    "quoted-printable",
+    "string-escape",
+    "zero-dependency",
+    "typescript",
+    "browser"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./ascii85": {
+      "types": "./dist/ascii85/index.d.ts",
+      "import": "./dist/ascii85/index.js",
+      "require": "./dist/ascii85/index.cjs"
+    },
+    "./base32": {
+      "types": "./dist/base32/index.d.ts",
+      "import": "./dist/base32/index.js",
+      "require": "./dist/base32/index.cjs"
+    },
+    "./base58": {
+      "types": "./dist/base58/index.d.ts",
+      "import": "./dist/base58/index.js",
+      "require": "./dist/base58/index.cjs"
+    },
+    "./base62": {
+      "types": "./dist/base62/index.d.ts",
+      "import": "./dist/base62/index.js",
+      "require": "./dist/base62/index.cjs"
+    },
+    "./base64-to-image": {
+      "types": "./dist/base64-to-image/index.d.ts",
+      "import": "./dist/base64-to-image/index.js",
+      "require": "./dist/base64-to-image/index.cjs"
+    },
+    "./html-entity": {
+      "types": "./dist/html-entity/index.d.ts",
+      "import": "./dist/html-entity/index.js",
+      "require": "./dist/html-entity/index.cjs"
+    },
+    "./image-to-base64": {
+      "types": "./dist/image-to-base64/index.d.ts",
+      "import": "./dist/image-to-base64/index.js",
+      "require": "./dist/image-to-base64/index.cjs"
+    },
+    "./punycode": {
+      "types": "./dist/punycode/index.d.ts",
+      "import": "./dist/punycode/index.js",
+      "require": "./dist/punycode/index.cjs"
+    },
+    "./quoted-printable": {
+      "types": "./dist/quoted-printable/index.d.ts",
+      "import": "./dist/quoted-printable/index.js",
+      "require": "./dist/quoted-printable/index.cjs"
+    },
+    "./string-escape": {
+      "types": "./dist/string-escape/index.d.ts",
+      "import": "./dist/string-escape/index.js",
+      "require": "./dist/string-escape/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/ test/",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "test:consumer": "node scripts/consumer-test.mjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "@vitest/coverage-v8": "^3.0.8",
+    "eslint": "^9.21.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}
